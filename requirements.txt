@@ -1,0 +1,6 @@
+# APEX-BIO Research Pipeline — Phase 1 Dependencies
+# Install: pip install -r requirements.txt
+
+biopython>=1.84,<2.0      # PubMed/Entrez API access
+pandas>=2.2,<3.0          # Data manipulation & CSV export
+tqdm>=4.66,<5.0           # Progress bars for batch operations
