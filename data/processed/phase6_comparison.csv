@@ -1,0 +1,14 @@
+theme,E. coli,S. cerevisiae,B. subtilis
+0. Gram-Pos Physiology & Bioprocess (Bs),3.711790393013101,0.22727272727272727,69.33962264150944
+1. Gram-Pos Bacterium Definition (Bs),0.8733624454148471,0.11363636363636363,11.320754716981133
+10. DNA Replication & Repair (Ec),5.895196506550218,0.22727272727272727,0.0
+11. Bacterial Reference Standard (Ec),21.83406113537118,0.0,0.4716981132075472
+12. Genomic Annotation Reference (Ec),5.676855895196507,0.0,0.0
+2. Eukaryotic Biology & Disease Model (Sc),1.7467248908296942,59.31818181818181,0.0
+3. Genetic Tractability & Workhorse Tools (Sc/Bs),10.262008733624455,39.659090909090914,17.452830188679243
+4. Experimental Selection Rationale (Ec),5.458515283842795,0.0,0.0
+5. Standard Bacterium Utility (Ec),8.73362445414847,0.0,0.0
+6. Heterologous Expression Host (Ec),12.882096069868995,0.45454545454545453,0.4716981132075472
+7. Clinical Pathogenesis Modeling (Ec),11.572052401746726,0.0,0.9433962264150944
+8. Gram-Negative Reference (Ec),5.240174672489083,0.0,0.0
+9. Antimicrobial Screening (Ec),6.11353711790393,0.0,0.0
