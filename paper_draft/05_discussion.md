@@ -6,7 +6,7 @@ The results of this study provide the first large-scale computational quantifica
 
 ## 5.1 Biological vs. Institutional Drivers (RQ1: The Axiomatic Acceptance Gap)
 
-The most striking finding of this study is the **Axiomatic Acceptance Gap** (presented in Section 4.2.2). In 61.5% of *E. coli* papers, authors felt no need to explicitly justify their choice of model organism, whereas authors using the eukaryotic control (*S. cerevisiae*) and the Gram-positive control (*B. subtilis*) left their model choices unjustified in only 31.1% and 32.0% of papers, respectively. 
+The most striking finding of this study is the **Axiomatic Acceptance Gap** (presented in Section 4.2.2). In 61.6% of *E. coli* papers, authors felt no need to explicitly justify their choice of model organism, whereas authors using the eukaryotic control (*S. cerevisiae*) and the Gram-positive control (*B. subtilis*) left their model choices unjustified in only 31.2% and 32.4% of papers, respectively. 
 
 This quantitative disparity represents the computational proof that *E. coli*'s premier status is not merely a reflection of ongoing biological utility, but is a deeply institutionalized paradigm. In the framework of Thomas Kuhn’s *The Structure of Scientific Revolutions* `[4]`, *E. coli* has ascended to the level of "normal science" where its utility is an implicit baseline axiom. For the majority of researchers, *E. coli* is not an active choice; it is the default environment. 
 
@@ -56,7 +56,7 @@ By bridging the gap between natural language justifications and database annotat
 ## 5.5 Limitations of the Study
 
 While this study offers a robust computational framework, several limitations must be acknowledged:
-*   **Abstract-Level Limitation:** The text corpus was restricted to PubMed abstracts. While abstracts contain the most concentrated, high-level summaries of a paper's rationale, authors may detail their model organism justifications inside the Full-Text Introduction or Methodology sections. Consequently, the 61.5% "null" rate reflects the absence of *explicit abstract-level justification*, which serves as a proxy for what authors deem important enough to summarize.
+*   **Abstract-Level Limitation:** The text corpus was restricted to PubMed abstracts. While abstracts contain the most concentrated, high-level summaries of a paper's rationale, authors may detail their model organism justifications inside the Full-Text Introduction or Methodology sections. Consequently, the 61.6% "null" rate reflects the absence of *explicit abstract-level justification*, which serves as a proxy for what authors deem important enough to summarize.
 *   **Database Scoping:** The queries relied on NCBI PubMed, which has an inherent bias toward biomedical, clinical, and molecular biology publications. While this aligns with where *E. coli* is most prominent, agricultural, ecological, and environmental studies of *E. coli* may be underrepresented.
 *   **Language Bias:** The corpus was restricted to English-language publications, reflecting global scientific communication standards but potentially omitting regional historical justifications.
 
