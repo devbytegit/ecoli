@@ -41,7 +41,7 @@ All retrieved records were deduplicated across search queries using their PubMed
 
 ## 3.2 Phase 2: LLM-Driven Claim Extraction & Cleaning
 
-To isolate the specific justifications scientists give for using their chosen model organism, we built an LLM extraction pipeline using the Llama 3.3 70B model (and gpt-oss-120b) queried via LiteLLM/OpenAI SDKs. 
+To isolate the specific justifications scientists give for using their chosen model organism, we built an LLM extraction pipeline using the gpt-oss-120b model queried via the Cerebras Inference API. 
 
 ### 3.2.1 Extraction Schema and Prompting
 Each abstract in the corpus was processed individually. The model was instructed to return a structured JSON object strictly matching the following schema:

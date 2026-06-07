@@ -64,7 +64,7 @@ Every phase builds on the previous one. Each phase has a clearly defined input, 
 
 #### P2: LLM Claim Extraction
 *   **Status:** **Completed ✓**
-*   **Process:** Sends each abstract to LLM (Llama 3.3 70B / gpt-oss-120b via Groq/Cerebras). Returns JSON: `claim`, `category` (biological/technical/historical/economic/cultural), `subcategory`, `supporting_quote`. Quote verified against abstract using fuzzy matching ($\ge$ 0.65). Hallucination rate evaluated at a very low 0.21% (7 claims removed).
+*   **Process:** Sends each abstract to LLM (gpt-oss-120b via Cerebras Inference API). Returns JSON: `claim`, `category` (biological/technical/historical/economic/cultural), `subcategory`, `supporting_quote`. Quote verified against abstract using fuzzy matching ($\ge$ 0.65). Hallucination rate evaluated at a very low 0.21% (7 claims removed).
 *   **Tools:** Groq/Cerebras APIs, jsonschema, tenacity, `phase2_extract.py`, `cleanup_phase2.py`.
 *   **Key Results:**
     *   **The Axiomatic Acceptance Finding:** Across the corpus, 50.2% of papers have no explicit justification. For *E. coli* alone, **61.5% of papers contain no justification** (treated as a self-evident axiom), compared to only ~31% for Yeast and ~32% for Bacillus.

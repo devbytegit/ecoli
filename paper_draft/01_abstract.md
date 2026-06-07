@@ -1,0 +1,9 @@
+# 1. Abstract
+
+**Background:** The status of *Escherichia coli* as the premier model microorganism is a foundational assumption of modern life sciences, yet this consensus has historically been justified only qualitatively. This study provides the first large-scale computational quantification of the biological, technical, and historical drivers establishing *E. coli*'s dominance.
+
+**Methodology:** We compiled a corpus of 3,273 peer-reviewed abstracts (1990–2025) across *E. coli*, *Saccharomyces cerevisiae*, and *Bacillus subtilis*. We constructed an LLM pipeline using the `gpt-oss-120b` model via the Cerebras Inference API to extract explicit justifications, followed by semantic embedding (PubMedBERT), dimensionality reduction (10D UMAP), density-based clustering (HDBSCAN), physical pathway mapping (KEGG and EcoCyc), and comparative profiling.
+
+**Results:** We discovered an "Axiomatic Acceptance Gap": 61.5% of *E. coli* papers contain no justification for using the organism, compared to ~31% for controls, revealing that *E. coli*'s model status is treated as an implicit paradigm requiring no validation. Unsupervised clustering identified 13 thematic justification categories. *E. coli* exhibits a balanced, general-purpose profile distributed across 9 distinct themes, whereas *S. cerevisiae* (99.0% in 2 themes) and *B. subtilis* (98.1% in 3 themes) are highly specialized niche models. Temporally, *E. coli* justifications for heterologous expression dropped from 44.1% (1990s) to 12.6% (2020s), reflecting technological normalization, while its justification as the bacterial reference standard rose from 2.9% to 30.3% following the 1997 sequencing milestone. Mapped justifications correspond precisely to conserved replication and export pathways.
+
+**Conclusion:** *E. coli* operates not merely as a biological model, but as a socio-institutional anchor in modern molecular biology.
