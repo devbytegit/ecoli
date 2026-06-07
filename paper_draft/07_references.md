@@ -18,6 +18,6 @@
 16. A Ghomi, F., Jung, J. J., Langridge, G. C., Cain, A. K., Boinett, C. J., Abd El Ghany, M., Pickard, D. J., Kingsley, R. A., Thomson, N. R., Parkhill, J., Gardner, P. P., & Barquist, L. (2024). High-throughput transposon mutagenesis in the family Enterobacteriaceae reveals core essential genes and rapid turnover of essentiality. *mBio*, 15(3), e03920-23. PMID: 39207104.
 17. Knoke, L. R., Muskietorz, M., Kuhn, L., & Leichert, L. I. (2025). The ABC transporter Opp imports reduced glutathione, while Gsi imports glutathione disulfide in Escherichia coli. *Redox Biology*, 79, 103968. PMID: 39689618.
 18. Ankeny, R. A., & Leonelli, S. (2011). What's so special about model organisms?. *Studies in History and Philosophy of Science Part A*, 42(2), 313–323.
-19. Kohler, R. E. (1994). *Lords of the fly: Drosophila genetics and the experimental life*. University of Chicago Press.
+19. Creager, A. N. (2002). *The Life of a Virus: Tobacco mosaic virus as an experimental model*. University of Chicago Press.
 20. Weber, M. (2005). *Philosophy of Experimental Biology*. Cambridge University Press.
 
