@@ -1,6 +1,6 @@
 # 4. Results
 
-This section presents the empirical and quantitative results generated across the six phases of our computational literature-mining and clustering pipeline.
+This section presents the empirical and quantitative results generated across the six phases of the computational literature-mining and clustering pipeline.
 
 ---
 
@@ -77,7 +77,7 @@ Phase 4 mapped the 13 clusters to physical biological pathways and regulatory ne
 
 ## 4.5 Temporal Justification Trajectories (RQ3 Answer)
 
-Phase 5 tracked shifts in the justification for using *E. coli* over time. We binned the 458 clustered *E. coli* explicit claims into four decadal periods. The trajectories (visualized in Figure 4.3, `data/figures/phase5_temporal.png`) revealed three major shifts:
+Phase 5 tracked shifts in the justification for using *E. coli* over time. The 458 clustered *E. coli* explicit claims were binned into four decadal periods. The trajectories (visualized in Figure 4.3, `data/figures/phase5_temporal.png`) revealed three major shifts:
 
 1.  **Rise of the "Bacterial Reference Standard":** Justifications selecting E. coli as the definitive bacterial reference standard rose continuously from **2.9% in the 1990s** to **26.0% in the 2000s**, reaching **30.3% in the 2020s**. This corresponds directly with the completion of the *E. coli* genome sequencing in 1997.
 2.  **Decline of "DNA Replication & Repair":** Claims based on E. coli DNA replication fork and repair mechanics fell continuously from **20.6% in the 1990s** to just **2.5% in the 2020s**, reflecting the transition of molecular genetics research toward eukaryotic hosts.
