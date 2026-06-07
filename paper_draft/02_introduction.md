@@ -20,7 +20,7 @@ This historical momentum culminated in 1997 with the publication of the complete
 
 ## 2.2 The Qualitative Consensus Gap
 
-In microbiology and molecular biology education, the status of *E. coli* as the "premier model microorganism" is taught as a fundamental, self-evident truth. Standard textbooks justify its dominance by citing qualitative properties: its rapid doubling time (~20 minutes in rich media), simple growth requirements, safe handling profile, and the vast historical accumulation of molecular tools. 
+In microbiology and molecular biology education, the status of *E. coli* as the "premier model microorganism" is taught as a fundamental, self-evident truth. Standard textbooks justify its dominance by citing qualitative properties: its rapid doubling time (~20 minutes in rich media), simple growth requirements, safe handling profile, and the vast historical accumulation of molecular tools. Standard history and philosophy of science (HPS) and science studies literature has extensively analyzed how model organisms function as community standards, templates, and experimental systems (e.g., Ankeny & Leonelli, 2011 `[18]`; Kohler, 1994 `[19]`; Weber, 2005 `[20]`). 
 
 However, this consensus is built upon a qualitative and historical narrative. To date, there has been no quantitative, large-scale literature-wide evaluation of *why* researchers choose to use *E. coli*, nor has there been any measurement of how often researchers justify this selection in peer-reviewed publications. The scientific community has accepted the model status of *E. coli* as an implicit paradigm, leaving an empirical gap in the understanding of how model organisms are validated and institutionalized in scientific practice.
 

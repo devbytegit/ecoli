@@ -25,9 +25,11 @@ Across all three organisms, the corpus was split almost equally between papers c
 *   **Null (No Reason Stated):** 1,643 papers (50.3% of the processed corpus)
 
 ### 4.2.2 The Axiomatic Acceptance Gap (RQ1 Answer)
-*   ***Escherichia coli*:** **61.6% Null** (1,263 out of 2,051 papers contain no justification; only 788 papers explicitly justify its use).
-*   ***Saccharomyces cerevisiae*:** **31.2% Null** (296 out of 950 papers contain no justification; 654 papers explicitly justify its use).
-*   ***Bacillus subtilis*:** **32.4% Null** (88 out of 272 papers contain no justification; 184 papers explicitly justify its use).
+*   ***Escherichia coli*:** **61.6% Null** [95% CI: 59.5%–63.7%] (1,263 out of 2,051 papers contain no justification; only 788 papers explicitly justify its use).
+*   ***Saccharomyces cerevisiae*:** **31.2% Null** [95% CI: 28.2%–34.1%] (296 out of 950 papers contain no justification; 654 papers explicitly justify its use).
+*   ***Bacillus subtilis*:** **32.4% Null** [95% CI: 26.8%–37.9%] (88 out of 272 papers contain no justification; 184 papers explicitly justify its use).
+
+To test whether the difference in justification rates across the three organisms is statistically significant, a Chi-square test of independence was performed on the $3 \times 2$ contingency table of organism versus justification status (implicit vs. explicit). The difference was found to be highly significant ($\chi^2(2) = 278.68$, $p < 0.0001$, raw $p = 3.06 \times 10^{-61}$).
 
 This **Axiomatic Acceptance Gap** indicates that in nearly two-thirds (61.6%) of *E. coli* publications, the model status of the bacterium is treated as a self-evident axiom requiring no validation. In contrast, researchers using Yeast and Bacillus feel compelled to explicitly justify their model choice in more than two-thirds of their papers (~68.8% and ~67.6% respectively, visualized in Figure 1, data/figures/fig1_axiomatic_acceptance_gap.png). 
 

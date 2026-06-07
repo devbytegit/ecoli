@@ -37,6 +37,8 @@ To collect literature where organisms are explicitly used as model systems, seve
 
 All retrieved records were deduplicated across search queries using their PubMed ID (PMID). Records lacking abstract texts or containing abstracts shorter than 30 characters were discarded. The final curated corpus consisted of **3,273 unique papers** (2,051 *E. coli* papers, 950 *S. cerevisiae* papers, and 272 *B. subtilis* papers).
 
+Importantly, the search queries were pre-filtered to retrieve only those papers that explicitly contain keywords related to the organism's model status (e.g., "model organism", "model system", "model bacterium", "reference organism") within their titles or abstracts. This represents a deliberate methodological design choice: rather than studying the general literature where *E. coli* is often used as a routine background tool, this design specifically isolates papers that *actively invoke* the model status of the organism. Consequently, the justification rate measured in Phase 2 does not represent the general rate of justification across all biology papers, but rather a more robust finding: even when researchers explicitly label *E. coli* as a model system in their abstract, nearly two-thirds (61.6%) still decline to provide any biological or technical justification for its selection.
+
 ---
 
 ## 3.2 Phase 2: LLM-Driven Claim Extraction & Cleaning
