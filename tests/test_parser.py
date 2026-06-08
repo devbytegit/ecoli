@@ -1,5 +1,5 @@
 """Quick smoke test for the MEDLINE parser and DataFrame builder."""
-from script import parse_medline_batch, build_dataframe
+from pipeline.phase1_data_collection import parse_medline_batch, build_dataframe
 
 # Simulate a MEDLINE record with various tag lengths (2, 3, 4 chars)
 sample = """PMID- 12345678

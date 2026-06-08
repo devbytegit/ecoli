@@ -18,7 +18,7 @@ from pathlib import Path
 from unittest.mock import MagicMock, patch
 
 # ── import the functions we want to test ──────────────────────────────────────
-from phase2_extract import (
+from pipeline.phase2_claim_extraction import (
     quote_match_score,
     validate_hallucination,
     parse_json_response,
@@ -365,7 +365,7 @@ class TestCerebrasIntegration:
             pytest.skip("CEREBRAS_API_KEY not set")
 
         client = OpenAI(base_url="https://api.cerebras.ai/v1", api_key=key)
-        from phase2_extract import call_api, RESPONSE_SCHEMA
+        from pipeline.phase2_claim_extraction import call_api, RESPONSE_SCHEMA
         from jsonschema import validate as jv
 
         raw = call_api(client, "TEST001", SAMPLE_ABSTRACT, "E. coli")
@@ -400,7 +400,7 @@ class TestCerebrasIntegration:
             pytest.skip("CEREBRAS_API_KEY not set")
 
         client = OpenAI(base_url="https://api.cerebras.ai/v1", api_key=key)
-        from phase2_extract import call_api
+        from pipeline.phase2_claim_extraction import call_api
 
         raw    = call_api(client, "TEST002", SAMPLE_ABSTRACT, "E. coli")
         result = parse_json_response(raw)

@@ -1,6 +1,6 @@
 # CLAUDE.md: E. coli Research Pipeline Project Guide
 
-This document defines the development environment, build commands, coding standards, and LLM Wiki schema. **Read this guide before executing any task in this workspace.**
+This document defines the development environment, execution commands, coding standards, and LLM Wiki schema. **Read this guide before executing any task in this workspace.**
 
 ---
 
@@ -12,19 +12,27 @@ The active Python virtual environment is located at `.venv/`. Always execute com
 *   **PowerShell:** `.\.venv\Scripts\Activate.ps1`
 *   **CMD:** `.\.venv\Scripts\activate.bat`
 
-### Execution Commands
-*   **Run Clustering Pipeline (Phase 3):** `python -u phase3_cluster.py`
-*   **Run Extraction Pipeline (Phase 2):** `python phase2_extract.py`
-*   **Verify Corpus:** `python verify_corpus.py`
-*   **Run Tests:** `pytest` (e.g. `pytest test_phase2.py`)
+### Execution Commands (From Workspace Root)
+*   **Phase 1 (Data Collection):** `python pipeline/phase1_data_collection.py`
+*   **Phase 2 (Claim Extraction):** `python pipeline/phase2_claim_extraction.py`
+*   **Phase 2 Cleanup:** `python pipeline/phase2_claim_cleanup.py`
+*   **Phase 3 (Clustering):** `python pipeline/phase3_semantic_clustering.py`
+*   **Phase 4 (Pathway Mapping):** `python pipeline/phase4_pathway_mapping.py`
+*   **Phase 5 (Temporal Analysis):** `python pipeline/phase5_temporal_analysis.py`
+*   **Phase 6 (Comparative Analysis):** `python pipeline/phase6_comparative_analysis.py`
+*   **Generate Publication Figures:** `python scripts/generate_figures.py`
+*   **Compile Manuscript (Word):** `python scripts/build_docx.py`
+*   **Run All Unit Tests:** `pytest`
+*   **Verify Corpus Integrity:** `python utils/verify_corpus.py`
+*   **Run Preflight Checks:** `python utils/preflight_check.py`
 
 ---
 
 ## 🎨 Coding Standards
 *   **Python Version:** Python 3.14 (ensure standard streams use UTF-8: `sys.stdout.reconfigure(encoding='utf-8')`).
-*   **Robust Imports:** Prefer explicit packages, verify dependencies in `.venv/` using `pip list`.
-*   **Caching Support:** Before generating heavy data or executing slow API requests, check if cache outputs exist (e.g. `data/processed/phase3_embeddings.npy`) and load them directly.
-*   **JSON Enforcement:** Always enforce strict JSON output format from LLM API calls with matching schema verification and self-correction guardrails.
+*   **Directories:** All pipeline code resides in `pipeline/`, user scripts in `scripts/`, tests in `tests/`, and helper/diagnostic utilities in `utils/`.
+*   **Robust Imports:** Verify imports are resolved relative to the workspace root.
+*   **JSON Enforcement:** Enforce strict JSON output structure for all LLM API extractions with fuzzy quote-matching verification to eliminate hallucinations.
 
 ---
 
@@ -36,26 +44,5 @@ The knowledge base is stored inside `ecoli_brain/` and contains three layers:
 3.  **Schema (`CLAUDE.md`):** This file, guiding agents on wiki organization and workflows.
 
 ### Special Navigation Files
-*   **Index (`ecoli_brain/wiki/index.md`):** Content-oriented directory. Organizes all wiki files by category with a one-line description and a markdown link.
-*   **Log (`ecoli_brain/wiki/log.md`):** Chronological, append-only record of all ingestions and pipeline runs. Format: `## [YYYY-MM-DD] action | Description`.
-
-### LLM Wiki Operations
-
-#### 1. Ingest Workflow
-When a new raw source file is placed in `ecoli_brain/raw/sources/`:
-1.  Read the source file content.
-2.  Write a summary page or update relevant pages in `ecoli_brain/wiki/`.
-3.  Add the new page to the Index (`index.md`) under the correct category.
-4.  Append an entry to the Chronological Log (`log.md`) with format: `## [YYYY-MM-DD] ingest | Source Name`.
-
-#### 2. Query Workflow
-When answering queries, the agent must:
-1.  Read the Index (`index.md`) to find relevant wiki pages.
-2.  Read the target wiki pages to synthesize an answer.
-3.  Save complex comparisons or findings back to `ecoli_brain/wiki/` as new knowledge pages.
-
-#### 3. Lint Workflow
-Periodically, run a check over the wiki to find:
-*   Contradictions or outdated claims.
-*   Orphan pages (no links in `index.md` or other pages).
-*   Missing cross-references between related pages.
+*   **Index (`ecoli_brain/wiki/index.md`):** Content-oriented directory. Organizes all wiki files by category.
+*   **Log (`ecoli_brain/wiki/log.md`):** Chronological, append-only record of all ingestions and pipeline runs.

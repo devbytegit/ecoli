@@ -48,6 +48,6 @@ except ImportError as e:
 
 print()
 if ok:
-    print("==> ALL CHECKS PASSED — run: python phase2_extract.py")
+    print("==> ALL CHECKS PASSED — run: python pipeline/phase2_claim_extraction.py")
 else:
     print("==> Fix issues above first")
